@@ -1,0 +1,62 @@
+---
+title       : BMI Calculator
+subtitle    : Easy use
+author      : Rafael dos Santos
+job         : University of Sao Paulo
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## BMI PRIME
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## BODY MASS INDEX (BMI)
+
+This is a simple BMI (Body Mass Index) calculator that takes the weight and the height according to the follow function.
+
+$$BMI = weight/(height^2)$$
+
+Although some authors seggest to use a diferent expoent, it would be more appropriate to use an exponent of between 2.3 and 2.7.
+
+But in this work we'll use the patern expoent (2).
+
+
+---
+
+## EXAMPLES
+
+If you have a weight of 80 kg (sorry, but I'll use international units (: ) and 1.87m height, then by equation from the past slide:
+
+$$BMI = 80/(1.87^2)$$
+$$BMI = 22.877$$
+
+Almost all the countries uses the patern as 25 of BMI.
+Then, to calculate the BMI prime we have to divide the BMI for the patern:
+
+$$Prime = BMI/PATERN$$
+$$Prime = 22.877/25$$
+$$Prime = 0.9151$$
+
+It means that this person has 91.51% of mass relative to the patern; or else, he's inside the ideal BMI. 8.49% percentual points above the limit of overweight.
+If we have a person with BMI = 30, than the BMI Prime will be equal to 1.20, or else, this person is 20% overweight.
+
+---
+
+## CLASSIFICATION TABLE
+
+```{r}
+sum(1:10)
+10*11
+```
+
+
+
